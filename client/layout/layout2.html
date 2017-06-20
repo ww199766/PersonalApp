@@ -1,0 +1,16 @@
+<template name="layout2">
+  <br>
+  <br>
+  <div class="container">
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="/"><h4>My Search Result</h4></a></li>
+      <li role="presentation"><a href="popular"><h4>Popular</h4></a></li>
+      <li role="presentation"><a href="sponsors"><h4>Recommended</h4></a></li>
+      <li role="presentation"><a href="about"><h4>About Me</h4></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+            {{> loginButtons}}
+    </ul>
+    {{>yield}}
+  </div>
+</template>

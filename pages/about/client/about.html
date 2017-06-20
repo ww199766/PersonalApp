@@ -1,0 +1,24 @@
+<template name="about">
+	<h1>Add</h1>
+	<hr>
+
+	{{> addRecipe}}
+</template>
+
+<template name="addRecipe">
+	<br>
+	name: <input type="text" id="name">
+	<hr>
+	<p>description:</p> <textarea name="Text1" id="description" placeholder="Enter description here" rows="2"></textarea><br>
+	<br>
+	<!-- <input type="text" id="description"> -->
+	<button id="addRecipe" class="btn btn-primary">Add Recipe!</button>
+
+</template>
+
+<template name="teamrow">
+   <tr>
+   	  <td>{{t.name}}</td>
+   	  <td>{{t.des}}</td>
+   </tr>
+</template>

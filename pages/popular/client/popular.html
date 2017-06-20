@@ -1,14 +1,14 @@
 <template name="popular">
-	<h1>Popular Recipes</h1>
 
+	<h1>Popular Recipes</h1>
 
 	<table class="table table-striped">
 		<thead>
-			<tr><th>name</th><th>ingredients</th></tr>
+			<tr><th>name</th><th>description</th></tr>
 		</thead>
 		<tbody>
-			{{#each recipe in List}}
-	  		{{> teamrow t=recipe}}
+			{{#each recipe in list}}
+	  		{{> teamrow r=recipe}}
 			{{/each}}
 		</tbody>
 		<tfoot>
@@ -16,6 +16,11 @@
 		</tfoot>
 	</table>
 
+</template>
 
-
+<template name="teamrow">
+   <tr>
+   	  <td><h5>{{r.name}}</h5></td>
+   	  <td>{{r.des}}</td>
+   </tr>
 </template>

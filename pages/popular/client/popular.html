@@ -3,6 +3,9 @@
 	<h1>Popular Recipes</h1>
 
 	<table class="table table-striped">
+		<col width="70">
+		<col width="140">
+		<col width="15">
 		<thead>
 			<tr><th>name</th><th>description</th></tr>
 		</thead>
@@ -22,5 +25,10 @@
    <tr>
    	  <td><h5>{{r.name}}</h5></td>
    	  <td>{{r.des}}</td>
+			<td>
+					<button class='glyphicon glyphicon-trash' aria-label="Right Align"></button>
+
+			</td>
+
    </tr>
 </template>

@@ -4,8 +4,12 @@ Template.popular.helpers({
   }
 })
 
-Template.popular.events({
+Template.teamrow.events({
   'click button'(elt, instance){
-      List.remove(this.r._id)
+      Meteor.call('popular.remove', this.r);
   }
+})
+
+Template.teamrow.helpers({
+  owner() {return (Meteor.userId()==this.r.owner||!this.r.owner)}
 })

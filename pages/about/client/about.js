@@ -16,7 +16,7 @@ Template.about.helpers(
     console.log('adding '+name+' des '+des);
     instance.$('#name').val("");
     instance.$('#description').val('');
-    List.insert({name:name,des:des});
+    Meteor.call('popular.insert',{name:name,des:des,owner:Meteor.userId()},(err,res)=>{console.dir([err,res]);});
     //People.insert({name,birthyear})
   }
 })

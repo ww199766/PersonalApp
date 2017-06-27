@@ -1,8 +1,12 @@
 <template name="about">
-	<h1>Add</h1>
-	<hr>
+	{{#if currentUser}}
+		<h1>Add</h1>
+		<hr>
 
-	{{> addRecipe}}
+		{{> addRecipe}}
+		{{else}}
+		<h2>You must log in to see the contents</h2>
+	{{/if}}
 </template>
 
 <template name="addRecipe">

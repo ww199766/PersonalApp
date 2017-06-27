@@ -1,0 +1,21 @@
+
+
+
+
+div.usualcss div.input-group{
+  height: 100%;
+  width: 100%;
+  padding-top: 6%;
+  padding-right: 16%;
+  padding-bottom: 25%;
+  padding-left: 16%;
+
+}
+
+div.usualcss h1 {
+
+    color: rgb(255, 251, 122);
+    text-align: center;
+    font-size: 3.99em;
+    font-family: "Papyrus", fantasy;
+}

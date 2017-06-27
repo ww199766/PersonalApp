@@ -1,0 +1,19 @@
+
+  div.layoutcss h4{
+      font-family: "Palatino Linotype", fantasy;
+
+  }
+
+  .nav-pills > li > a, .nav-pills > li > a:focus {
+      color: rgb(214, 207, 128);
+      background-color: rgb(61, 61, 58);
+  }
+
+    .nav-pills > li > a:hover {
+        background-color: rgb(214, 207, 128);
+        color:black;
+    }
+
+    #login a{
+      color: rgb(214, 207, 128);
+    }

@@ -19,3 +19,15 @@ div.usualcss h1 {
     font-size: 3.99em;
     font-family: "Papyrus", fantasy;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    div.usualcss p {
+      font-size: 0.3em;
+    }
+    div.usualcss h1 {
+      font-size: 2.0em;
+    }
+
+}

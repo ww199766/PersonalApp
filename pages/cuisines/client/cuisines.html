@@ -1,15 +1,31 @@
 <template name="cuisines">
   <br>
   <br>
-  <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary active">
-    <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
-  </label>
-  <label class="btn btn-primary">
-    <input type="checkbox" autocomplete="off"> Checkbox 2
-  </label>
-  <label class="btn btn-primary">
-    <input type="checkbox" autocomplete="off"> Checkbox 3
-  </label>
-</div>
+  <div class="btn-group-vertical" role="group" data-toggle="buttons">
+    <button class="btn btn-default">
+      <input type="radio" name="options" id="option1" autocomplete="off"> American
+    </button>
+    <button class="btn btn-default">
+      <input type="radio" name="options" id="option2" autocomplete="off"> Italian
+    </button>
+    <button class="btn btn-default">
+      <input type="radio" name="options" id="option3" autocomplete="off"> Japanese
+    </button>
+    <button class="btn btn-default">
+      <input type="radio" name="options" id="option4" autocomplete="off"> Chinese
+    </button>
+
+    <button class="btn btn-default">
+      <input type="radio" name="options" id="option5" autocomplete="off"> French
+    </button>
+
+    <button class="btn btn-default">
+      <input type="radio" name="options" id="option6" autocomplete="off"> Other
+    </button>
+  </div>
+    <hr>
+    <button class="btn btn-primary"><h5> Save!</h5></button>
+
+
+
 </template>

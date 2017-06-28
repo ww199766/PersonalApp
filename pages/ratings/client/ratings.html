@@ -2,16 +2,27 @@
 <template name="ratings">
   <br>
   <br>
-  <div class="btn-group" data-toggle="buttons">
-    <label class="btn btn-primary active">
-      <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-    </label>
-    <label class="btn btn-primary">
-      <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-    </label>
-    <label class="btn btn-primary">
-      <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-    </label>
+
+
+  <div class="btn-group-vertical" data-toggle="buttons">
+  <button class="btn btn-default">
+    <input type="checkbox" autocomplete="off" checked> 1-2 points (pre-checked)
+  </button>
+  <button class="btn btn-default">
+    <input type="checkbox" autocomplete="off"> 2-3
+  </button>
+  <button class="btn btn-default">
+    <input type="checkbox" autocomplete="off"> 3-4
+  </button>
+
+  <button class="btn btn-default">
+    <input type="checkbox" autocomplete="off"> 4-5
+  </button>
+  <br>
+
   </div>
+  <hr>
+  <button class="btn btn-primary btn-success"><h5> Save!</h5></button>
+
 
 </template>

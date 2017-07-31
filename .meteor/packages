@@ -29,6 +29,6 @@ standard-minifier-js@2.0.0
 accounts-google
 underscore@1.0.10
 reactive-dict@1.1.8
-autopublish
 shell-server
 google-config-ui
+reactive-var

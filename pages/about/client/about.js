@@ -3,6 +3,11 @@ const list =
     {name:"Roast A" , des: "a,b,c,d" },
     {name:"Fried E" , des: "e,d,g" }
   ];
+Template.about.onCreated(
+  function(){
+    Meteor.subscribe('list');
+  }
+  )
 
 Template.about.helpers(
  {

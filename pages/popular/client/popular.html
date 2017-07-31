@@ -23,13 +23,27 @@
 
 <template name="teamrow">
    <tr>
-   	  <td><h5>{{r.name}}</h5></td>
-   	  <td>{{r.des}}</td>
-			<td>
-				{{#if owner}}
-					<button class='glyphicon glyphicon-trash' aria-label="Right Align"></button>
-				{{/if}}
+		 {{#if edit}}
+		 	<td>
+				name: <input id='editName'><br>
 			</td>
+			<td>
+				description: <input id='editDescription'>
+			</td>
+			<td>
+				<button class='btn' id='update' aria-label="Right Align"> Update! </button>
+			</td>
+		 {{else}}
+			 <td><h5>{{r.name}}</h5></td>
+			 <td>{{r.des}}</td>
+			 <td>
+				 {{#if owner}}
+				 <button id='edit' aria-label="Right Align">edit</button>
+				 <button class='glyphicon glyphicon-trash' aria-label="Right Align"></button>
+				 {{/if}}
+			 </td>
+		 {{/if}}
+
 
    </tr>
 </template>
